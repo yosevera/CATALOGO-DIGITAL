@@ -1,0 +1,466 @@
+#:kivy 2.3.0
+
+ScreenManager:
+    id: screen_manager
+    WelcomeScreen:
+        name: "welcome"
+    LoginScreen:
+        name: "login"
+    MenuScreen:
+        name: "menu"
+    CatalogScreen:
+        name: "catalogo"
+    CarritoScreen:
+        name: "carrito"
+
+<WelcomeScreen>:
+    logo_source: "img/logo.png"
+    BoxLayout:
+        orientation: "vertical"
+        padding: 20
+        spacing: 30
+        canvas.before:
+            Color:
+                rgba: 0.98, 0.96, 0.92, 1  # beige claro
+            Rectangle:
+                pos: self.pos
+                size: self.size
+
+        Label:
+            text: "Bienvenido al Catálogo Mazahua"
+            font_size: "32sp"
+            bold: True
+            color: 0.12, 0.12, 0.12, 1
+            size_hint_y: None
+            height: self.texture_size[1]
+
+        Image:
+            source: root.logo_source
+            size_hint_y: None
+            height: "200dp"
+            allow_stretch: True
+            keep_ratio: True
+
+        Widget:
+            size_hint_y: None
+            height: 20
+
+        Button:
+            text: "Comenzar"
+            size_hint_y: None
+            height: "60dp"
+            background_color: (0.16, 0.42, 0.23, 1)
+            color: (1, 1, 1, 1)
+            on_release: root.on_start()
+
+<LoginScreen>:
+    BoxLayout:
+        orientation: "vertical"
+        padding: 20
+        spacing: 15
+        canvas.before:
+            Color:
+                rgba: 0.98, 0.96, 0.92, 1
+            Rectangle:
+                pos: self.pos
+                size: self.size
+
+        Label:
+            text: "Iniciar Sesión"
+            font_size: "28sp"
+            bold: True
+            color: 0.12, 0.12, 0.12, 1
+            size_hint_y: None
+            height: self.texture_size[1]
+
+        BoxLayout:
+            orientation: "vertical"
+            spacing: 5
+            size_hint_y: None
+            height: self.minimum_height
+
+            Label:
+                text: "Usuario:"
+                font_size: "18sp"
+                color: 0.24, 0.18, 0.18, 1
+                size_hint_y: None
+                height: self.texture_size[1]
+
+            TextInput:
+                id: input_user
+                multiline: False
+                size_hint_y: None
+                height: 44
+                font_size: "18sp"
+                background_color: 1, 1, 1, 1
+                foreground_color: 0, 0, 0, 1
+                cursor_color: 0, 0, 0, 1
+                padding: [12, 10, 12, 10]
+
+        BoxLayout:
+            orientation: "vertical"
+            spacing: 5
+            size_hint_y: None
+            height: self.minimum_height
+
+            Label:
+                text: "Contraseña:"
+                font_size: "18sp"
+                color: 0.24, 0.18, 0.18, 1
+                size_hint_y: None
+                height: self.texture_size[1]
+
+            TextInput:
+                id: input_pass
+                multiline: False
+                password: True
+                size_hint_y: None
+                height: 44
+                font_size: "18sp"
+                background_color: 1, 1, 1, 1
+                foreground_color: 0, 0, 0, 1
+                cursor_color: 0, 0, 0, 1
+                padding: [12, 10, 12, 10]
+
+        Widget:
+            size_hint_y: None
+            height: 10
+
+        BoxLayout:
+            spacing: 15
+            size_hint_y: None
+            height: "50dp"
+
+            Button:
+                text: "Iniciar Sesión"
+                font_size: "20sp"
+                background_color: (0.16, 0.42, 0.23, 1)
+                color: (1, 1, 1, 1)
+                border: [0, 0, 0, 0]
+                canvas.before:
+                    Color:
+                        rgba: 0.16, 0.42, 0.23, 1
+                    RoundedRectangle:
+                        pos: self.pos
+                        size: self.size
+                        radius: [16]
+                on_release: root.on_login()
+
+            Button:
+                text: "Volver"
+                font_size: "20sp"
+                background_color: (0.55, 0.27, 0.07, 1)
+                color: (1, 1, 1, 1)
+                border: [0, 0, 0, 0]
+                canvas.before:
+                    Color:
+                        rgba: 0.55, 0.27, 0.07, 1
+                    RoundedRectangle:
+                        pos: self.pos
+                        size: self.size
+                        radius: [16]
+                on_release: root.on_volver()
+
+<MenuScreen>:
+    BoxLayout:
+        orientation: "vertical"
+        padding: 20
+        spacing: 20
+        canvas.before:
+            Color:
+                rgba: 0.98, 0.96, 0.92, 1
+            Rectangle:
+                pos: self.pos
+                size: self.size
+
+        Label:
+            text: root.bienvenida_text
+            font_size: "26sp"
+            bold: True
+            color: 0.12, 0.12, 0.12, 1
+            size_hint_y: None
+            height: self.texture_size[1]
+
+        GridLayout:
+            cols: 1
+            size_hint_y: None
+            height: self.minimum_height
+            spacing: 15
+
+            Button:
+                text: "Ropa"
+                font_size: "20sp"
+                background_color: (0.16, 0.42, 0.23, 1)
+                color: (1, 1, 1, 1)
+                size_hint_y: None
+                height: "50dp"
+                border: [0, 0, 0, 0]
+                canvas.before:
+                    Color:
+                        rgba: 0.16, 0.42, 0.23, 1
+                    RoundedRectangle:
+                        pos: self.pos
+                        size: self.size
+                        radius: [16]
+                on_release: root.on_categoria("Ropa")
+
+            Button:
+                text: "Accesorios"
+                font_size: "20sp"
+                background_color: (0.16, 0.42, 0.23, 1)
+                color: (1, 1, 1, 1)
+                size_hint_y: None
+                height: "50dp"
+                border: [0, 0, 0, 0]
+                canvas.before:
+                    Color:
+                        rgba: 0.16, 0.42, 0.23, 1
+                    RoundedRectangle:
+                        pos: self.pos
+                        size: self.size
+                        radius: [16]
+                on_release: root.on_categoria("Accesorios")
+
+            Button:
+                text: "Zapatos"
+                font_size: "20sp"
+                background_color: (0.16, 0.42, 0.23, 1)
+                color: (1, 1, 1, 1)
+                size_hint_y: None
+                height: "50dp"
+                border: [0, 0, 0, 0]
+                canvas.before:
+                    Color:
+                        rgba: 0.16, 0.42, 0.23, 1
+                    RoundedRectangle:
+                        pos: self.pos
+                        size: self.size
+                        radius: [16]
+                on_release: root.on_categoria("Zapatos")
+
+        Widget:
+            size_hint_y: None
+            height: 15
+
+        BoxLayout:
+            spacing: 15
+            size_hint_y: None
+            height: "50dp"
+
+            Button:
+                text: "Ver Carrito"
+                font_size: "20sp"
+                background_color: (0.44, 0.62, 0.43, 1)
+                color: (1, 1, 1, 1)
+                border: [0, 0, 0, 0]
+                canvas.before:
+                    Color:
+                        rgba: 0.44, 0.62, 0.43, 1
+                    RoundedRectangle:
+                        pos: self.pos
+                        size: self.size
+                        radius: [16]
+                on_release: root.on_carrito()
+
+            Button:
+                text: "Cerrar sesión"
+                font_size: "20sp"
+                bold: True
+                background_color: (0.55, 0.27, 0.07, 1)
+                color: (1, 1, 1, 1)
+                border: [0, 0, 0, 0]
+                canvas.before:
+                    Color:
+                        rgba: 0.55, 0.27, 0.07, 1
+                    RoundedRectangle:
+                        pos: self.pos
+                        size: self.size
+                        radius: [16]
+                on_release: root.on_logout()
+
+<CatalogScreen>:
+    container: container
+    BoxLayout:
+        orientation: "vertical"
+        padding: 15
+        spacing: 15
+        canvas.before:
+            Color:
+                rgba: 0.98, 0.96, 0.92, 1
+            Rectangle:
+                pos: self.pos
+                size: self.size
+
+        BoxLayout:
+            size_hint_y: None
+            height: "45dp"
+            spacing: 10
+
+            TextInput:
+                id: search_bar
+                hint_text: "Buscar producto..."
+                multiline: False
+                on_text: root.on_search(self.text)
+                size_hint_x: 1
+                font_size: "16sp"
+                padding: [10, 10, 10, 10]
+
+            Button:
+                text: "Volver"
+                size_hint_x: None
+                width: "90dp"
+                background_color: (0.55, 0.27, 0.07, 1)
+                color: (1, 1, 1, 1)
+                on_release: root.on_volver()
+
+        ScrollView:
+            do_scroll_x: False
+
+            GridLayout:
+                id: container
+                cols: 1
+                size_hint_y: None
+                height: self.minimum_height
+                spacing: 12
+
+<ProductItem@BoxLayout>:
+    nombre: ""
+    descripcion: ""
+    precio: 0.0
+    img_path: ""
+    size_hint_y: None
+    height: "160dp"
+    padding: 10
+    spacing: 12
+    canvas.before:
+        Color:
+            rgba: .98, .98, 1, 1
+        RoundedRectangle:
+            pos: self.pos
+            size: self.size
+            radius: [10]
+    Image:
+        source: root.img_path
+        size_hint_x: None
+        width: "140dp"
+        allow_stretch: True
+        keep_ratio: True
+    BoxLayout:
+        orientation: "vertical"
+        spacing: 8
+        padding: [0, 6, 0, 0]
+        Label:
+            text: root.nombre
+            font_size: "20sp"
+            color: 0.24, 0.18, 0.18, 1
+            bold: True
+            size_hint_y: None
+            height: self.texture_size[1]
+        Label:
+            text: root.descripcion
+            font_size: "16sp"
+            color: 0.3, 0.3, 0.3, 1
+            text_size: self.width, None
+            size_hint_y: None
+            height: self.texture_size[1]
+        Label:
+            text: f"Precio: ${root.precio}"
+            font_size: "18sp"
+            color: 0.48, 0.3, 0.18, 1
+            bold: True
+            size_hint_y: None
+            height: self.texture_size[1]
+    Button:
+        text: "Comprar"
+        font_size: "18sp"
+        size_hint_x: None
+        width: "110dp"
+        background_color: (0.16, 0.42, 0.23, 1)
+        color: (1, 1, 1, 1)
+        border: [0, 0, 0, 0]
+        canvas.before:
+            Color:
+                rgba: 0.16, 0.42, 0.23, 1
+            RoundedRectangle:
+                pos: self.pos
+                size: self.size
+                radius: [14]
+        on_release: app.agregar_al_carrito({"nombre": root.nombre, "descripcion": root.descripcion, "precio": root.precio, "img_path": root.img_path})
+
+<CarritoScreen>:
+    container: container
+    BoxLayout:
+        orientation: "vertical"
+        padding: 15
+        spacing: 15
+        canvas.before:
+            Color:
+                rgba: 0.98, 0.96, 0.92, 1
+            Rectangle:
+                pos: self.pos
+                size: self.size
+
+        BoxLayout:
+            size_hint_y: None
+            height: "45dp"
+            spacing: 10
+
+            Button:
+                text: "Volver"
+                size_hint_x: None
+                width: "90dp"
+                background_color: (0.55, 0.27, 0.07, 1)
+                color: (1, 1, 1, 1)
+                on_release: root.on_volver()
+
+            Button:
+                text: "Imprimir Ticket"
+                size_hint_x: None
+                width: "140dp"
+                background_color: (0.44, 0.62, 0.43, 1)
+                color: (1, 1, 1, 1)
+                on_release: root.on_imprimir_ticket()
+
+        Label:
+            text: "Carrito de Compras"
+            font_size: "24sp"
+            bold: True
+            color: 0.12, 0.12, 0.12, 1
+            size_hint_y: None
+            height: self.texture_size[1]
+
+        GridLayout:
+            cols: 5
+            size_hint_y: None
+            height: 40
+            spacing: 8
+
+            Label:
+                text: "#"
+                bold: True
+
+            Label:
+                text: "Producto"
+                bold: True
+
+            Label:
+                text: "Cantidad"
+                bold: True
+
+            Label:
+                text: "Subtotal"
+                bold: True
+
+            Label:
+                text: "Total"
+                bold: True
+
+        ScrollView:
+            do_scroll_x: False
+
+            GridLayout:
+                id: container
+                cols: 5
+                size_hint_y: None
+                height: self.minimum_height
+                spacing: 8

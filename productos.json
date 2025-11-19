@@ -1,0 +1,234 @@
+[
+  {
+    "nombre": "Blusa Mazahua",
+    "categoria": "Ropa",
+    "descripcion": "Blusa tradicional bordada a mano.",
+    "precio": 350,
+    "imagen": "blusa_mazahua.jpg",
+    "tallas": ["S", "M", "L", "XL"]
+  },
+  {
+    "nombre": "Falda Bordada",
+    "categoria": "Ropa",
+    "descripcion": "Falda con bordados típicos de la región.",
+    "precio": 400,
+    "imagen": "falda_bordada.jpg",
+    "tallas": ["S", "M", "L", "XL"]
+  },
+  {
+    "nombre": "Camisa Tradicional",
+    "categoria": "Ropa",
+    "descripcion": "Camisa hecha de algodón con diseños mazahuas.",
+    "precio": 320,
+    "imagen": "camisa_tradicional.jpg",
+    "tallas": ["S", "M", "L", "XL"]
+  },
+  {
+    "nombre": "Pantalón de Mezclilla",
+    "categoria": "Ropa",
+    "descripcion": "Pantalón cómodo para el día a día.",
+    "precio": 450,
+    "imagen": "pantalon_mezclilla.jpg",
+    "tallas": ["28", "30", "32", "34"]
+  },
+  {
+    "nombre": "Chaleco Mazahua",
+    "categoria": "Ropa",
+    "descripcion": "Chaleco tejido con diseños tradicionales.",
+    "precio": 380,
+    "imagen": "chaleco_mazahua.jpg",
+    "tallas": ["S", "M", "L", "XL"]
+  },
+  {
+    "nombre": "Vestido Largo",
+    "categoria": "Ropa",
+    "descripcion": "Vestido para ocasiones especiales con bordado.",
+    "precio": 550,
+    "imagen": "vestido_largo.jpg",
+    "tallas": ["S", "M", "L"]
+  },
+  {
+    "nombre": "Rebozo Colorido",
+    "categoria": "Ropa",
+    "descripcion": "Rebozo hecho a mano con colores vivos.",
+    "precio": 300,
+    "imagen": "rebozo_colorido.jpg",
+    "tallas": ["Única"]
+  },
+  {
+    "nombre": "Suéter de Lana",
+    "categoria": "Ropa",
+    "descripcion": "Suéter para días fríos con diseño mazahua.",
+    "precio": 420,
+    "imagen": "sueter_lana.jpg",
+    "tallas": ["S", "M", "L", "XL"]
+  },
+  {
+    "nombre": "Pantalón Tradicional",
+    "categoria": "Ropa",
+    "descripcion": "Pantalón con bordado a mano.",
+    "precio": 470,
+    "imagen": "pantalon_tradicional.jpg",
+    "tallas": ["28", "30", "32", "34"]
+  },
+  {
+    "nombre": "Camisa de Algodón",
+    "categoria": "Ropa",
+    "descripcion": "Camisa fresca para uso diario.",
+    "precio": 310,
+    "imagen": "camisa_algodon.jpg",
+    "tallas": ["S", "M", "L", "XL"]
+  },
+
+  {
+    "nombre": "Collar de Chaquira",
+    "categoria": "Accesorios",
+    "descripcion": "Collar artesanal hecho con chaquira de colores.",
+    "precio": 150,
+    "imagen": "collar_chaquira.jpg"
+  },
+  {
+    "nombre": "Pulsera de Hilo",
+    "categoria": "Accesorios",
+    "descripcion": "Pulsera tejida a mano con hilo de algodón.",
+    "precio": 90,
+    "imagen": "pulsera_hilo.jpg"
+  },
+  {
+    "nombre": "Aretes de Madera",
+    "categoria": "Accesorios",
+    "descripcion": "Aretes tallados en madera con diseños mazahuas.",
+    "precio": 120,
+    "imagen": "aretes_madera.jpg"
+  },
+  {
+    "nombre": "Bolsa de Tela",
+    "categoria": "Accesorios",
+    "descripcion": "Bolsa hecha con tela tradicional mazahua.",
+    "precio": 200,
+    "imagen": "bolsa_tela.jpg"
+  },
+  {
+    "nombre": "Anillo de Plata",
+    "categoria": "Accesorios",
+    "descripcion": "Anillo de plata con grabados típicos.",
+    "precio": 350,
+    "imagen": "anillo_plata.jpg"
+  },
+  {
+    "nombre": "Cinturón Tejido",
+    "categoria": "Accesorios",
+    "descripcion": "Cinturón hecho a mano con diseños tradicionales.",
+    "precio": 180,
+    "imagen": "cinturon_tejido.jpg"
+  },
+  {
+    "nombre": "Broche Artesanal",
+    "categoria": "Accesorios",
+    "descripcion": "Broche con bordados mazahuas.",
+    "precio": 130,
+    "imagen": "broche_artesanal.jpg"
+  },
+  {
+    "nombre": "Llavero Mazahua",
+    "categoria": "Accesorios",
+    "descripcion": "Llavero hecho a mano con figuras tradicionales.",
+    "precio": 80,
+    "imagen": "llavero_mazahua.jpg"
+  },
+  {
+    "nombre": "Sombrero de Palma",
+    "categoria": "Accesorios",
+    "descripcion": "Sombrero tejido artesanalmente con palma.",
+    "precio": 250,
+    "imagen": "sombrero_palma.jpg"
+  },
+  {
+    "nombre": "Monedero Bordado",
+    "categoria": "Accesorios",
+    "descripcion": "Monedero pequeño con bordados típicos.",
+    "precio": 110,
+    "imagen": "monedero_bordado.jpg"
+  },
+
+  {
+    "nombre": "Zapato de Piel",
+    "categoria": "Zapatos",
+    "descripcion": "Zapato cómodo hecho con piel genuina.",
+    "precio": 700,
+    "imagen": "zapato_piel.jpg",
+    "tallas": ["25", "26", "27", "28", "29", "30"]
+  },
+  {
+    "nombre": "Sandalia Tradicional",
+    "categoria": "Zapatos",
+    "descripcion": "Sandalia tejida a mano con fibras naturales.",
+    "precio": 550,
+    "imagen": "sandalia_tradicional.jpg",
+    "tallas": ["24", "25", "26", "27", "28"]
+  },
+  {
+    "nombre": "Botín de Cuero",
+    "categoria": "Zapatos",
+    "descripcion": "Botín resistente para uso diario.",
+    "precio": 800,
+    "imagen": "botin_cuero.jpg",
+    "tallas": ["26", "27", "28", "29", "30"]
+  },
+  {
+    "nombre": "Zapato Casual",
+    "categoria": "Zapatos",
+    "descripcion": "Zapato cómodo para uso casual.",
+    "precio": 650,
+    "imagen": "zapato_casual.jpg",
+    "tallas": ["25", "26", "27", "28", "29"]
+  },
+  {
+    "nombre": "Tenis Deportivo",
+    "categoria": "Zapatos",
+    "descripcion": "Tenis ligeros y resistentes para deporte.",
+    "precio": 900,
+    "imagen": "tenis_deportivo.jpg",
+    "tallas": ["24", "25", "26", "27", "28", "29", "30"]
+  },
+  {
+    "nombre": "Zapato de Tela",
+    "categoria": "Zapatos",
+    "descripcion": "Zapato hecho con tela y bordados mazahuas.",
+    "precio": 620,
+    "imagen": "zapato_tela.jpg",
+    "tallas": ["25", "26", "27", "28", "29"]
+  },
+  {
+    "nombre": "Sandalia de Cuero",
+    "categoria": "Zapatos",
+    "descripcion": "Sandalia con suela de cuero tradicional.",
+    "precio": 570,
+    "imagen": "sandalia_cuero.jpg",
+    "tallas": ["24", "25", "26", "27"]
+  },
+  {
+    "nombre": "Zapato de Tela Bordado",
+    "categoria": "Zapatos",
+    "descripcion": "Zapato con bordados típicos mazahuas.",
+    "precio": 680,
+    "imagen": "zapato_tela_bordado.jpg",
+    "tallas": ["25", "26", "27", "28"]
+  },
+  {
+    "nombre": "Botín Tradicional",
+    "categoria": "Zapatos",
+    "descripcion": "Botín hecho a mano con diseño mazahua.",
+    "precio": 790,
+    "imagen": "botin_tradicional.jpg",
+    "tallas": ["26", "27", "28", "29"]
+  },
+  {
+    "nombre": "Zapato de Fiesta",
+    "categoria": "Zapatos",
+    "descripcion": "Zapato elegante para ocasiones especiales.",
+    "precio": 850,
+    "imagen": "zapato_fiesta.jpg",
+    "tallas": ["25", "26", "27", "28", "29"]
+  }
+]
